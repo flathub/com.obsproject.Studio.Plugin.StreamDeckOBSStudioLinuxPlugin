@@ -40,9 +40,3 @@ modules:
           
       - type: file
         path: com.obsproject.Studio.Plugin.StreamDeckOBSStudioLinuxPlugin.metainfo.xml
-
-        
-        id: com.obsproject.Studio.Plugin.StreamDeckOBSStudioLinuxPlugin
-
-        
-        branch: stable
