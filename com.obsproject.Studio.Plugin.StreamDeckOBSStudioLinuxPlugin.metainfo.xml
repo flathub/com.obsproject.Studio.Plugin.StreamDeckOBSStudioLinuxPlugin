@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="addon">
+  <id>com.obsproject.Studio.Plugin.StreamDeckOBSStudioLinuxPlugin</id>
+  <extends>com.obsproject.Studio</extends>
+  <name>Stream Deck OBSStudio Linux Plugin</name>
+  <summary>OBS Plugin to connect Linux Stream Deck Software like opendeck</summary>
+  <url type="homepage">https://github.com/LinuxGamesTV/streamdeck-obs-linux-plugin2</url>
+  <url type="bugtracker">https://github.com/LinuxGamesTV/streamdeck-obs-linux-plugin2/issues</url>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0</project_license>
+  <releases>
+    <release version="5.5.4.0" date="2026-05-05">
+      <description></description>
+    </release>
+  </releases>
+</component>
