@@ -11,21 +11,15 @@ build-options:
 
 modules:
   - name: obs-streamdeck-linux-plugin
-    buildsystem: simple
+    buildsystem: cmake-ninja
+    no-make-install: true
     builddir: true
-    build-commands:
-      # Configure
-      - cmake -B build -G Ninja -DCMAKE_BUILD_TYPE=Release
-    
-      # Build
-      - cmake --build build
 
     post-install:
-    - install -Dm0644 com.obsproject.Studio.Plugin.StreamDeckOBSStudioLinuxPlugin.metainfo.xml -t ${FLATPAK_DEST}/share/metainfo/
-    - mkdir -p ${FLATPAK_DEST}/share/obs/obs-plugins/StreamDeckPlugin/locale/
-    - install  data/locale/de-DE.ini -t ${FLATPAK_DEST}/share/obs/obs-plugins/StreamDeckPlugin/locale/
-    - install  data/locale/en-US.ini -t ${FLATPAK_DEST}/share/obs/obs-plugins/StreamDeckPlugin/locale/
-    - install -Dm0644 build/libStreamDeckPlugin.so ${FLATPAK_DEST}/lib/obs-plugins/libStreamDeckPlugin.so
+      - install -Dm0644 ${FLATPAK_BUILDER_BUILDDIR}/com.obsproject.Studio.Plugin.StreamDeckOBSStudioLinuxPlugin.metainfo.xml -t ${FLATPAK_DEST}/share/metainfo/
+      - mkdir -p ${FLATPAK_DEST}/share/obs/obs-plugins/StreamDeckPlugin/locale/
+      - install  ${FLATPAK_BUILDER_BUILDDIR}/data/locale/*.ini -t ${FLATPAK_DEST}/share/obs/obs-plugins/StreamDeckPlugin/locale/
+      - install -Dm0644 libStreamDeckPlugin.so ${FLATPAK_DEST}/lib/obs-plugins/libStreamDeckPlugin.so
 
     sources:
       - type: git
