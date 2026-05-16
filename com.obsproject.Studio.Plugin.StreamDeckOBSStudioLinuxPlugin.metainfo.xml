@@ -8,8 +8,10 @@
   <url type="bugtracker">https://github.com/LinuxGamesTV/streamdeck-obs-linux-plugin2/issues</url>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0</project_license>
-  <releases>    
-    <release version="5.5.4.2" date="2026-05-16">
-    <release version="5.5.4.0" date="2026-05-05">
+  <releases>      
+    <release version="5.5.4.2" date="2026-05-16" />
+      <description>"Update the Linux Plugin to 5.5.4.2, so its on pair with the Mac and Windows plugin and add more translations"</description>
+    <release version="5.5.4.0" date="2026-05-05" />
+      <description></description>
   </releases>
 </component>
