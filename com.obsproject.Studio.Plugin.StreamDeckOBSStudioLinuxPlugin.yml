@@ -24,8 +24,9 @@ modules:
     sources:
       - type: git
         url: https://github.com/LinuxGamesTV/streamdeck-obs-linux-plugin2.git
-        tag: "5.5.4.0"
-        commit: 27361964f4aac9e68c6313db112ab05014bc6e2f
+        tag: "5.5.4.2"
+        commit: 7edb4c84d1a00e80814a58fe2e6c4160aaa4473b
+
         
         x-checker-data:
           type: git
