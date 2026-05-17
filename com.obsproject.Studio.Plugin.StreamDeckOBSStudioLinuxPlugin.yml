@@ -1,7 +1,7 @@
 id: com.obsproject.Studio.Plugin.StreamDeckOBSStudioLinuxPlugin
 branch: stable
 runtime: com.obsproject.Studio
-runtime-version: stable
+runtime-version: 5.5.4.2
 sdk: org.freedesktop.Sdk//25.08
 build-extension: true
 separate-locales: false
